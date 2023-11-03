@@ -1,11 +1,10 @@
 const express=require("express")
 const app=express();
 const bookrouter=require("./routers/bookrouter")
-import { fileURLToPath } from "url";
+
 import path from "path";
 const cors=require("cors")
-const __filename=fileURLToPath(import.meta.url)
-const __dirname=path.dirname(__filename);
+
 app.use(express.json( { extended: false} ));
 app.use(express.json())
 app.use(cors())
