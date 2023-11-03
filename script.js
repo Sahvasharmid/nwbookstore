@@ -10,7 +10,7 @@ app.use(cors())
 
 app.use("/newbooks",bookrouter)
 
-const PORT=5555||process.env.PORT
+const PORT=5555
 app.listen(PORT,()=>{
     console.log(`port running on ${PORT}`)
 })
